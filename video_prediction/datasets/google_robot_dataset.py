@@ -21,6 +21,7 @@ class GoogleRobotVideoDataset(VideoDataset):
         hparams = dict(
             context_frames=2,
             sequence_length=15,
+            crop_size=64
         )
         return dict(itertools.chain(default_hparams.items(), hparams.items()))
 
